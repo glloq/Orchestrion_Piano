@@ -8,6 +8,9 @@ Nous utiliserons des pac9685 pour controller la puissance de frappe de chaque so
 
 # montage electrique
 
+> [!CAUTION]
+> penser a l'ajout de fusibles ou disjoncteurs pour les parties 230v et 24v!
+
 le montage est relativement simple, il ne faudra qu'un arduino, des pca 99685, des mofset de puissance et des solenoides (avec l'alimentation adapté) 
 ![Schema electrique](https://raw.githubusercontent.com/glloq/Orchestrion_Piano/main/img/branchement%20pwm.png?raw=true)
 
@@ -20,9 +23,11 @@ Selectionner des solenoides qui n'ont pas un amperage trop elevée pour limiter 
 l'idée est de fixer les soilenoides sous les touches et d'actionner directement les touche via une tige metalique.
 ![Schema mecanique](https://raw.githubusercontent.com/glloq/Orchestrion_Piano/main/img/montage.png?raw=true)
 
-> [!CAUTION]
-> penser a l'ajout de fusibles ou disjoncteurs pour les parties 230v et 24v!
+> [!TIP]
+> il faudra ajouter ou retirer du poid sur/dans la touche .
 
+> [!CAUTION]
+> les vieux piano utilise du plomb !
 
 # Settings
 
@@ -30,6 +35,6 @@ Il n'y a que peu de reglages a prendre en compte dans ce projet :
 - le numero midi de la premiere note (la plus grave) 
 - le pwm minimum pour activer le solenoide
 - le nombre de note jouable
-- les pins de sorties pour les pedales
+- les pins de sorties pour les pedales => il faudrait utiliser des servomoteur pour limiter la chauffe ?
 
   
