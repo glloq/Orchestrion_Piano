@@ -53,6 +53,7 @@ Il faut donc prevoir 3 servomoteurs et un mecanisme qui respecte 3 contraintes :
 - permet une activation rapide (moins de 0.5s max)
 - permet un maintient de la position sans etre alimenté
 
+Un systeme d'arbre a came pourrait fonctionner ?
   
 # Utilisation du code
 
