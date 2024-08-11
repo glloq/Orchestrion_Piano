@@ -1,15 +1,26 @@
 > [!NOTE]
-> travail en cours et je n'ai pas la place pour tester !
+> je fait ca pour le fun, je n'ai pas la place pour tester !
 
 # Presentation 
 
 l'objectif est d'avoir un code qui est facilement adaptable pour differents piano.
 Nous utiliserons des pac9685 pour controller la puissance de frappe de chaque solenoide.
+l'idée de base est d'utilsiser un cable usb pour envoyer les messages midi a un arduino qui viendra interpreter et exectuer les notes demandée sur le piano.
 
 # montage electrique
 
 > [!CAUTION]
-> penser a l'ajout de fusibles ou disjoncteurs pour les parties 230v et 24v!
+> penser a l'ajout de fusibles ou disjoncteurs pour les parties 230v alternatif et la partie basse tension en courrant continu!
+
+il faut adapter l'alimentation des solenoides en fonction de la consomation !
+Si ont part du principe que l'on a un piano 88 touches et des solenoides de 0.5A, avec 88 solenoides il faut bien prevoir l'alimentation !
+en prenant en compte le pic d'intensité à l'activation, il faut prevoir jusqu'a 3 a 5 fois la consomation pendant quelques ms=> donc 2.5A pour un seul soloenoide!!
+
+
+il y a une methode pour limiter le nombre maximum de solenoides actif en meme temps sur une seule alimentation, il faut repartir plusieurs alimentations sur toute la surface des touches et alterner pour limiter a 5 le nomrbe maximum de solenoides actif en meme temps pour chaque alimentation ( par exemple 4 alimentation de 15A  alterné toutes les 2 touches) 
+
+> [!TIP]
+> prevoir l'ajout d'un filtre LC ou de condensateur proche des solenoides ?
 
 ## les touches
 
@@ -27,7 +38,7 @@ l'idée est de fixer les soilenoides sous les touches et d'actionner directement
 ![Schema mecanique](https://raw.githubusercontent.com/glloq/Orchestrion_Piano/main/img/montage.png?raw=true)
 
 > [!TIP]
-> il faudra ajouter ou retirer du poid sur/dans la touche .
+> il faudra ajouter ou retirer du poid sur/dans la touche pour adapter la macanique au solenoide
 
 > [!CAUTION]
 > les vieux piano utilise du plomb !
