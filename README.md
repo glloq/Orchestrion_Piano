@@ -13,7 +13,7 @@ Nous utiliserons des pac9685 pour controller la puissance de frappe de chaque so
 
 ## les touches
 
-le montage est relativement simple, il ne faudra qu'un arduino, des pca 99685, des mofset de puissance et des solenoides (avec l'alimentation adapté) 
+le montage est relativement simple, il ne faudra qu'un arduino, des pca 9685, des mofset de puissance et des solenoides (avec l'alimentation adapté) 
 ![Schema electrique](https://raw.githubusercontent.com/glloq/Orchestrion_Piano/main/img/branchement%20pwm.png?raw=true)
 
 des mofset serait adapté a cette utilisation mais il faut pensser a l'ajout d'une diode de roue libre !
