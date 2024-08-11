@@ -6,17 +6,6 @@
 l'objectif est d'avoir un code qui est facilement adaptable pour differents piano.
 Nous utiliserons des pac9685 pour controller la puissance de frappe de chaque solenoide.
 
-# montage mecanique
-
-on trouve facilement des piano vertical pour rien ou presque, je part la dessus !
-
-## les doigts 
-
-l'idée est de fixer les soilenoides sous les touches et d'actionner directement les touche via une tige metalique.
-![Schema mecanique](https://raw.githubusercontent.com/glloq/Orchestrion_Piano/main/img/montage.png?raw=true)
-
-
-
 # montage electrique
 
 le montage est relativement simple, il ne faudra qu'un arduino, des pca 99685, des mofset de puissance et des solenoides (avec l'alimentation adapté) 
@@ -27,6 +16,9 @@ Selectionner des solenoides qui n'ont pas un amperage trop elevée pour limiter 
 
 > [!TIP]
 > pour les solenoides, viser une alimentation en 24v, un deplacement de 10mm avec 5 a 7N de force.
+
+l'idée est de fixer les soilenoides sous les touches et d'actionner directement les touche via une tige metalique.
+![Schema mecanique](https://raw.githubusercontent.com/glloq/Orchestrion_Piano/main/img/montage.png?raw=true)
 
 > [!CAUTION]
 > penser a l'ajout de fusibles ou disjoncteurs pour les parties 230v et 24v!
@@ -39,3 +31,5 @@ Il n'y a que peu de reglages a prendre en compte dans ce projet :
 - le pwm minimum pour activer le solenoide
 - le nombre de note jouable
 - les pins de sorties pour les pedales
+
+  
