@@ -1,6 +1,9 @@
 > [!NOTE]
 > je fait ca pour le fun, je n'ai pas la place pour tester !
 
+> [!IMPORTANT]
+> le code compile et devrais fonctionner mais rien n'est testé !
+
 # Presentation 
 
 l'objectif est d'avoir un code qui est facilement adaptable pour differents piano.
